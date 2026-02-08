@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav">
+            <h1 class="logo">Online Portfolio</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="text">
+                <h2>ALEXANDER SCOTTISH</h2>
+                <p>
+                    Hi, I am a Professional Developer and ICT Degree holder.
+                    I have five years of experience in the IT sector as an ICT Lecturer.
+                </p>
+                <button>Hire Me</button>
+            </div>
+            <div class="image">
+                <img src="myphoto.jpg" alt="myphoto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <img src="myphoto.jpg" alt="About Image">
+            <div>
+                <h2>ABOUT ME</h2>
+                <p>
+                    I Am Developer blends expertise with industry know-how to guide your next property development.
+                </p>
+                <p>
+                    Software Devlopers use software development languages and tools to write,edit,maintain, and test computer software devlopers follow the software devlopment lifecycle(SDLC) TO plan,design,build,test and deploy software application,ranging from websites and mobile applications to web applications and video games. In addition to creating new software,software devlopers improve and maintain the working order of existing software.
+                </p>
+                <a href="resume.pdf" class="btn" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Basic Python</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio built using HTML and CSS.</p>
+                </div>
+                <div class="project">
+                    <h3>Landing Page</h3>
+                    <p>A landing page is an ideal web development project for beginners. It requires basic
+                        knowledge of HTML and CSS. Through this project, you'll learn to create columns, divide
+                        sections, arrange items, and add headers and footers. The most important aspect is
+                        unleashing your creativity to design an impressive page. Pay attention to alignments,
+                        padding, color palette, boxes, and other elements. Be mindful of CSS to avoid overlapping
+                        elements. In short, a landing page project allows you to apply HTML and CSS skills,
+                        encouraging your creativity while ensuring a visually appealing and user-friendly design.</p>
+                </div>
+                <div class="project">
+                    <h3>Simple Calculator</h3>
+                    <p>A calculator built with HTML, CSS, and JavaScript.</p>
+                    <section id="calculator" class="calculator-section">
+                        <h2>Simple Calculator</h2>
+                    
+                        <div class="calculator">
+                            <input type="text" id="display" disabled>
+                    
+                            <div class="buttons">
+                                <button onclick="clearDisplay()">C</button>
+                                <button onclick="appendValue('/')">/</button>
+                                <button onclick="appendValue('*')">*</button>
+                                <button onclick="appendValue('-')">-</button>
+                    
+                                <button onclick="appendValue('7')">7</button>
+                                <button onclick="appendValue('8')">8</button>
+                                <button onclick="appendValue('9')">9</button>
+                                <button onclick="appendValue('+')">+</button>
+                    
+                                <button onclick="appendValue('4')">4</button>
+                                <button onclick="appendValue('5')">5</button>
+                                <button onclick="appendValue('6')">6</button>
+                                <button onclick="calculateResult()">=</button>
+                    
+                                <button onclick="appendValue('1')">1</button>
+                                <button onclick="appendValue('2')">2</button>
+                                <button onclick="appendValue('3')">3</button>
+                                <button onclick="appendValue('0')" class="zero">0</button>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>RESUME</h2>
+            <p>You can download my resume below:</p>
+            <a href="resume.pdf" class="btn" download>Download PDF</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <p>Email: tandelkrutika82@email.com</p>
+            <p>Phone: +91 9687099051</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Alexander Scottish. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
